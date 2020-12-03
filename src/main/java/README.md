@@ -17,7 +17,8 @@ The application protocol again can be of 2 types. Simple message tranmission and
 "actions" like client pressing the exit button. The controls are used
 
 The Server(telephone) is a similar to a state machine. It has states like: idle, dialing, ringing and talking. The client makes control operations to change the server(telephone) to other states. For ex: innitially the phone is idle. The client can make CALL control to call the otther client. The server will change into dialing state and will inform the other phone(server) that it is called. Then the server2 will inform the client2 that it is called. The client 2 has 2 options : make a CALL or
-EXIT Control. If CALL is made then the serve2 will inform the serv1(that will transition in talking state and inform client1 that they are talking).
+EXIT Control. If CALL is made then the serve2 will inform the serv1(that will transition in talking state and inform client1 that they are talking). Serv2 will
+also transition in talking state. in this state clients can talk.
 
 There are other details that I will not cover, feel free to ask me.
 
