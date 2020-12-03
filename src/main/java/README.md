@@ -35,9 +35,11 @@ The Server(telephone) is a similar to a state machine. It has states like: idle,
 EXIT Control. If CALL is made then the serve2 will inform the serv1(that will transition in talking state and inform client1 that they are talking). Serv2 will
 also transition in talking state. in this state clients can talk.
 
-So in general:
-Client can generate CALL, EXIT Controls or some message. CLient can digest or "it cares" only NOTIFY_CALL and NOTIFY_ACCEPT_CALL.
-Server can generate NOTIFY_CALL, NOTIFY_ACCEPT_CALL and EXIT. Server can digest all controls. It also pass messages if certain conditions are met.
+So in general:<br>
+1. Client can generate CALL, EXIT Controls or some message. <br>
+2. CLient can digest or "it cares" only NOTIFY_CALL and NOTIFY_ACCEPT_CALL.<br>
+3. Server can generate NOTIFY_CALL, NOTIFY_ACCEPT_CALL and EXIT. <br>
+4. Server can digest all controls. It also pass messages if certain conditions are met.<br>
  
 There are other details that I will not cover, feel free to ask me.
 
